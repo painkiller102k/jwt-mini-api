@@ -29,13 +29,6 @@ py -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-### macOS / Linux
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
 Paigalda vajalikud teegid:
 
 ```bash
@@ -50,12 +43,6 @@ Enne rakenduse käivitamist määra keskkonnamuutuja `JWT_SECRET`.
 
 ```powershell
 $env:JWT_SECRET = "asenda-oma-salavotmega"
-```
-
-### macOS / Linux
-
-```bash
-export JWT_SECRET="asenda-oma-salavotmega"
 ```
 
 Ära lisa päris salavõtit GitHubi repositooriumisse.
@@ -148,10 +135,3 @@ Oodatav tulemus: HTTP `401 Unauthorized`.
 
 Pärast testi kasuta uuesti enda salavõtit. Ära kasuta väärtust `1982` päris rakenduses.
 
-## Turvalisus
-
-- Hoia salavõti saladuses.
-- Ära kasuta testkasutajate paroole päris rakenduses.
-- Päris rakenduses tuleb paroole turvaliselt räsida.
-- Tootmiskeskkonnas tuleb silumisrežiim välja lülitada.
-- Projekt on loodud õppimise ja testimise eesmärgil.
