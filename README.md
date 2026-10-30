@@ -22,18 +22,12 @@ Ava terminal projekti kaustas.
 
 Loo virtuaalkeskkond ja aktiveeri see.
 
-### Windows PowerShell
-
-```powershell
-py -m venv .venv
-.venv\Scripts\Activate.ps1
-```
-
 Paigalda vajalikud teegid:
 
 ```bash
 pip install -r requirements.txt
 ```
+
 
 ## Seadistamine
 
